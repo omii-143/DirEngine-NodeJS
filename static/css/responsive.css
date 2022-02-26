@@ -1,0 +1,92 @@
+@media screen and (max-width: 1400px) {
+    .third-container .box-container {
+        top: -7%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: 55.50%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    * {
+        font-size: 50.50%;
+    }
+    .collapse-btn {
+        display: inline-block;
+    }
+    .navbar {
+        height: 5rem;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .navbar ul {
+        visibility: hidden;
+        flex-direction: column;
+        transition: all 0.5s;
+    }
+    .navigation {
+        padding: 2rem 5rem;
+        background: #181818;
+    }
+    .eight-first {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    * {
+        font-size: 45.50%;
+    }
+    .third-container .box-container .content-box {
+        width: 55rem;
+        margin: 1.5rem 0 0 0;
+    }
+    .third-container .box-container {
+        top: 0%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        font-size: 40.50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 38.50%;
+    }
+    .footer-content {
+        min-height: 42rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    * {
+        font-size: 35.50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    * {
+        font-size: 30.50%;
+    }
+    .eleven-inner input {
+        border-right: 1px solid #ffffffa3;
+    }
+    .eleven-inner p {
+        width: 40rem;
+    }
+    .fifth-card {
+        width: 40rem!important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    * {
+        font-size: 25.50%;
+    }
+}

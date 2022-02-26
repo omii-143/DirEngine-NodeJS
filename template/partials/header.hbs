@@ -1,0 +1,52 @@
+<div class="navigation">
+    <nav class="navbar">
+        <a href="#" class="navbar-Logo">driEngine.</a>
+        <button type="menu" class="collapse-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul>
+            <li class="nav-items"><a class="nav-a" id="home" href="/">Home</a></li>
+            <li class="nav-items"><a class="nav-a" id="about" href="/about">About</a></li>
+            <li class="nav-items"><a class="nav-a" id="tour" href="/tour">Tour</a></li>
+            <li class="nav-items"><a class="nav-a" id="hotels" href="/hotels">Hotels</a></li>
+            <li class="nav-items"><a class="nav-a" id="blog" href="/blog">Blog</a></li>
+            <li class="nav-items"><a class="nav-a" id="contact" href="/contact">Contact</a></li>
+            <button class="add-list-btn">Add listing</button>
+        </ul>
+    </nav>
+</div>
+</div>
+
+<script>
+    const classes = ['.navbar .nav-items a', '.navigation', '.navbar-Logo', '.collapse-btn', '.add-list-btn'];
+    window.addEventListener('scroll', () => {
+        const scrolled = Math.floor(window.scrollY);
+        if (scrolled > 350) {
+            classes.forEach((item) => {
+                $(item).addClass('active');
+            });
+        } else if (scrolled < 200) {
+            classes.forEach((item) => {
+                $(item).removeClass('active');
+            });
+        };
+    });
+    if (window.location.href.endsWith('/')) {
+        $('#home').addClass('on');
+    } else if (window.location.href.endsWith('/about')) {
+        $('#about').addClass('on');
+    } else if (window.location.href.endsWith('/blog')) {
+        $('#blog').addClass('on');
+    } else if (window.location.href.endsWith('/tour')) {
+        $('#tour').addClass('on');
+    } else if (window.location.href.endsWith('/hotels')) {
+        $('#hotels').addClass('on');
+    } else if (window.location.href.endsWith('/contact')) {
+        $('#contact').addClass('on');
+    }
+
+    const btnClasses = ['.collapse-btn','.navigation','.collapse-btn i','.navbar ul'];
+    $('.collapse-btn').on('click', function () {
+        btnClasses.forEach((item)=>{
+            $(item).toggleClass('menu');
+        });
+    })
+</script>

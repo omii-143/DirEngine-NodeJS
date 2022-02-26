@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="../img/logos/favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>DirEngine</title>
+</head>
+
+<body>
+    {{>header}}
+
+    {{!-- ----------------------------------------------- --}}
+
+    <div style="display:grid; place-item:center; background: linear-gradient(rgb(0 0 0 / 3%), rgb(0 0 0 / 3%)), url(../img/bg-6.jpg) no-repeat center center/cover;"
+        class="first-container">
+        <div data-aos="fade-up" style="text-align: center;" class="second-container">
+            <span>
+                <a style="color:white;" href="/">Home</a>
+                <a style="color:rgb(187 187 187);" href="/contact">Contact</a>
+            </span>
+            <h1 style="text-align: center; margin: 0;">Contact Us</h1>
+        </div>
+    </div>
+
+    {{!-- ----------------------------------------------- --}}
+
+    <div style="background: #fff; min-height: 85rem;" class="container fifth-container">
+        <div class="contact-information">
+            <h1>Contact Information</h1>
+            <div class="contact-address">
+                <div class="address">
+                    <p><strong>Address:</strong> 198 West 21th Street,<br> Suite 721 New York NY 10016</p>
+                </div>
+                <div class="address">
+                    <p><strong>Phone:</strong> 0123456789</p>
+                </div>
+                <div class="address">
+                    <p><strong>Email:</strong> info@example.com</p>
+                </div>
+                <div class="address">
+                    <p><strong>Website:</strong> yourwebsite.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-container">
+            <form action="/contact" class="contactForm">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Subject">
+                <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+            <div class="contactForm">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04360432939!2d73.79292688275116!3d18.524603553440915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1645716439930!5m2!1sen!2sin"
+                    class="Maps" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    {{!-- ----------------------------------------------- --}}
+    {{>footer}}
+
+
+
+    <script>
+
+        // AOS 
+        AOS.init({
+            duration: 1000,
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
+    </script>
+</body>
+
+</html>

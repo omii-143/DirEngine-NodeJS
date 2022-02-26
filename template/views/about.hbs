@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="../img/logos/favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>DirEngine</title>
+</head>
+
+<body>
+    {{>header}}
+{{!-- ----------------------------------------------- --}}
+    <div style="display:grid; place-item:center; background: linear-gradient(rgb(0 0 0 / 3%), rgb(0 0 0 / 3%)), url(../img/bg-2.webp) no-repeat center center/cover;"
+        class="first-container">
+        <div data-aos="fade-up" style="text-align: center;" class="second-container">
+            <span>
+                <a style="color:white;" href="/">Home</a>
+                <a style="color:rgb(187 187 187);" href="/about">About</a>
+            </span>
+            <h1 style="text-align: center; margin: 0;">About Us</h1>
+        </div>
+    </div>
+
+{{!-- ----------------------------------------------- --}}
+
+    <div class="about-container">
+        <div class="about-img">
+            <img src="/img/about-us/img-1.webp" alt="...">
+        </div>
+        <div class="about-content">
+            <div class="about-buttons">
+                <button id="what-btn" class="mis-btn active">What we Do</button>
+                <button id="mission-btn" class="mis-btn ">Our Mission</button>
+                <button id="goal-btn" class="mis-btn">Our goal</button>
+            </div>
+            <div id="what-para" class="about-para active">
+                <h1>Offering Reliable Hosting</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolorum odit ipsa. Veniam et harum
+                    facilis animi obcaecati culpa odit.
+                    <br>
+                    <br>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in
+                </p>
+            </div>
+            <div id="mission-para" class="about-para ">
+                <h1>Exceptional Web Solutions</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed voluptate veritatis vitae esse,
+                    incidunt facere porro itaque debitis cupiditate aut eveniet, praesentium repellendus mollitia
+                    facilis hic magnam laborum tempore sapiente!
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum assumenda quos aspernatur, itaque
+                    asperiores eaque?
+                </p>
+            </div>
+            <div id="goal-para" class="about-para">
+                <h1>Help Our Customer</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste
+                    dolores consequatur
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    {{!-- ----------------------------------------------- --}}
+
+    <div style="background: #f7fcff; min-height:60rem;" class="container fifth-container">
+        <div data-aos="fade-up" class="fifth-upper">
+            <p>FAQs</p>
+            <br>
+            <h1><span>Frequently </span>Ask Question</h1>
+        </div>
+        <br>
+        <div style="margin-top: 5rem; align-items: unset; flex-wrap:wrap;" class="fifth-bottom">
+            <div class="faqbox-container">
+                <div class="faqbox show">
+                    <div class="faq-question ">
+                        <h1>When she reached the first hills?</h1>
+                        <button class="faq-btn">
+                            <span class="faq-plus show"></span>
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates numquam quos sint
+                        expedita enim explicabo, reprehenderit consequatur qui dolorem incidunt quibusdam atque eos?
+                        Nemo odio repudiandae quis aliquid laboriosam delectus, quam aperiam veritatis nihil! Rem
+                        voluptatem veniam commodi dolorum!</p>
+                </div>
+                <div class="faqbox ">
+                    <div class="faq-question ">
+                        <h1>When she reached the first hills?</h1>
+                        <button class="faq-btn">
+                            <span class="faq-plus"></span>
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates numquam quos sint
+                        expedita enim explicabo, reprehenderit consequatur qui dolorem incidunt quibusdam atque eos?
+                        Nemo odio repudiandae quis aliquid laboriosam delectus, quam aperiam veritatis nihil! Rem
+                        voluptatem veniam commodi dolorum!</p>
+                </div>
+                <div class="faqbox ">
+                    <div class="faq-question ">
+                        <h1>When she reached the first hills?</h1>
+                        <button class="faq-btn">
+                            <span class="faq-plus"></span>
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates numquam quos sint
+                        expedita enim explicabo, reprehenderit consequatur qui dolorem incidunt quibusdam atque eos?
+                        Nemo odio repudiandae quis aliquid laboriosam delectus, quam aperiam veritatis nihil! Rem
+                        voluptatem veniam commodi dolorum!</p>
+                </div>
+            </div>
+            <div class="faqbox-container">
+                <div class="faqbox ">
+                    <div class="faq-question ">
+                        <h1>When she reached the first hills?</h1>
+                        <button class="faq-btn">
+                            <span class="faq-plus"></span>
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates numquam quos sint
+                        expedita enim explicabo, reprehenderit consequatur qui dolorem incidunt quibusdam atque eos?
+                        Nemo odio repudiandae quis aliquid laboriosam delectus, quam aperiam veritatis nihil! Rem
+                        voluptatem veniam commodi dolorum!</p>
+                </div>
+                <div class="faqbox ">
+                    <div class="faq-question ">
+                        <h1>When she reached the first hills?</h1>
+                        <button class="faq-btn">
+                            <span class="faq-plus"></span>
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates numquam quos sint
+                        expedita enim explicabo, reprehenderit consequatur qui dolorem incidunt quibusdam atque eos?
+                        Nemo odio repudiandae quis aliquid laboriosam delectus, quam aperiam veritatis nihil! Rem
+                        voluptatem veniam commodi dolorum!</p>
+                </div>
+                <div class="faqbox ">
+                    <div class="faq-question ">
+                        <h1>When she reached the first hills?</h1>
+                        <button class="faq-btn">
+                            <span class="faq-plus"></span>
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates numquam quos sint
+                        expedita enim explicabo, reprehenderit consequatur qui dolorem incidunt quibusdam atque eos?
+                        Nemo odio repudiandae quis aliquid laboriosam delectus, quam aperiam veritatis nihil! Rem
+                        voluptatem veniam commodi dolorum!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{!-- ----------------------------------------------- --}}
+    {{>footer}}
+
+
+
+    <script>
+        // BTNs
+        const btns = document.querySelectorAll(".mis-btn");
+        const what_btn = document.getElementById('what-btn');
+        const mission_btn = document.getElementById('mission-btn');
+        const goal_btn = document.getElementById('goal-btn');
+
+        // Paras
+        const paras = document.querySelectorAll(".about-para");
+        const what_para = document.getElementById('what-para');
+        const mission_para = document.getElementById('mission-para');
+        const goal_para = document.getElementById('goal-para');
+
+
+        function activeLink() {
+            btns.forEach((item) => {
+                item.classList.remove('active')
+            });
+            if (this.id === 'what-btn') {
+                what_para.classList.add('active');
+                mission_para.classList.remove('active');
+                goal_para.classList.remove('active');
+            }
+            if (this.id === 'mission-btn') {
+                mission_para.classList.add('active');
+                what_para.classList.remove('active');
+                goal_para.classList.remove('active');
+            }
+            if (this.id === 'goal-btn') {
+                mission_para.classList.remove('active');
+                goal_para.classList.add('active');
+                what_para.classList.remove('active');
+            }
+            this.classList.add('active');
+        };
+        btns.forEach((item) => {
+            item.addEventListener('click', activeLink);
+        });
+
+
+        // FAQ 
+        $('.faq-btn').on('click', function () {
+            $(this).parent().parent().toggleClass('show');
+            $(this).children().toggleClass('show');
+        });
+
+
+        // AOS 
+
+        AOS.init({
+            duration: 1000,
+            disable: function() {
+            var maxWidth = 800;
+            return window.innerWidth < maxWidth;}
+        });
+    </script>
+</body>
+
+</html>
